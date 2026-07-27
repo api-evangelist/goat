@@ -1,8 +1,26 @@
 aid: goat
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/goat.png
 name: GOAT
-description: GOAT is a company surfaced as a portfolio company of a16z, accel, index-ventures, initialized-capital,
-  matrix-partners, sv-angel and added to the API Evangelist network as a stub for enrichment. This profile
-  is a lead awaiting the enrichment pipeline.
+description: GOAT (operated by GOAT Group) is a global online marketplace for authentic sneakers,
+  apparel, and accessories, launched in 2015 and headquartered in the Los Angeles area. The platform
+  pairs a consumer buying-and-selling experience with in-house authentication that verifies new and
+  used footwear and streetwear from thousands of brands, and GOAT Group also operates the Flight Club
+  consignment stores and the alias seller platform. GOAT was surfaced as a portfolio company of a16z,
+  accel, index-ventures, initialized-capital, matrix-partners, and sv-angel and added to the API
+  Evangelist network as a venture-backed company profile. It runs a consumer commerce platform rather
+  than a public developer API, so this enriched profile focuses on verified company identity and the
+  security surface probed from its public domain.
 url: https://raw.githubusercontent.com/api-evangelist/goat/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -17,9 +35,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Commerce
+- Marketplace
+- Retail
+- Fashion
+- Sneakers
+- Apparel
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,5 +51,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/goat-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/goat-domain-security.yml
+- type: Security
+  url: https://www.goat.com/security/responsible-disclosure
 - type: Website
-  url: http://www.goat.com
+  url: https://www.goat.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
