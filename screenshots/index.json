@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "goat",
+    "captured_at": "2026-10-11T185821",
+    "source_url": "https://www.goat.com",
+    "source_type": "Website",
+    "file": "goat-2026-10-11T185821.png",
+    "bytes": 26357,
+    "capture": "playwright-local"
+  }
+]
